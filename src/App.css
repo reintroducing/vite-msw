@@ -1,0 +1,45 @@
+.App {
+  padding: 40px;
+}
+
+.Popover {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 10, 20, 0.1);
+  border: 1px solid #ddd;
+  font-size: 90%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100vw - 10px);
+}
+
+.bubbleContainer {
+  border: 1px solid black;
+}
+
+.bubble {
+  width: 120px;
+  height: 80px;
+  background: red;
+  position: relative;
+  border-radius: 10px;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid red;
+  border-bottom: 13px solid transparent;
+}
+
+.trigger {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
